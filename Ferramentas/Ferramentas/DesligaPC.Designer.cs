@@ -92,6 +92,7 @@
             this.btnDesligaMin.TabIndex = 2;
             this.btnDesligaMin.Text = "Agendar";
             this.btnDesligaMin.UseVisualStyleBackColor = true;
+            this.btnDesligaMin.Click += new System.EventHandler(this.btnDesligaMin_Click);
             // 
             // label2
             // 
