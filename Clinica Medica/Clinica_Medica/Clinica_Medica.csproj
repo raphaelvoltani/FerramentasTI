@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C4284AFE-E202-42DE-9956-789C0747AF67}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Clinica_Medica</RootNamespace>
+    <AssemblyName>Clinica_Medica</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.SqlClient, Version=4.6.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.Data.SqlClient.4.9.0\lib\net462\System.Data.SqlClient.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="frmAltMedico.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAltMedico.Designer.cs">
+      <DependentUpon>frmAltMedico.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAltPaciente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAltPaciente.Designer.cs">
+      <DependentUpon>frmAltPaciente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCadMedico.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCadMedico.Designer.cs">
+      <DependentUpon>frmCadMedico.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCadPaciente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCadPaciente.Designer.cs">
+      <DependentUpon>frmCadPaciente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_telainicial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_telainicial.Designer.cs">
+      <DependentUpon>frm_telainicial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_tela_altera_medico.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_tela_altera_medico.Designer.cs">
+      <DependentUpon>frm_tela_altera_medico.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_tela_altera_paciente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_tela_altera_paciente.Designer.cs">
+      <DependentUpon>frm_tela_altera_paciente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Med_CliDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Med_CliDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Med_CliDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Med_CliDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmAltMedico.resx">
+      <DependentUpon>frmAltMedico.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAltPaciente.resx">
+      <DependentUpon>frmAltPaciente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCadMedico.resx">
+      <DependentUpon>frmCadMedico.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCadPaciente.resx">
+      <DependentUpon>frmCadPaciente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_telainicial.resx">
+      <DependentUpon>frm_telainicial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_tela_altera_medico.resx">
+      <DependentUpon>frm_tela_altera_medico.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_tela_altera_paciente.resx">
+      <DependentUpon>frm_tela_altera_paciente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Med_CliDataSet.xsc">
+      <DependentUpon>Med_CliDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Med_CliDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Med_CliDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Med_CliDataSet.xss">
+      <DependentUpon>Med_CliDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Med_CliDataSet1.xsc">
+      <DependentUpon>Med_CliDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Med_CliDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Med_CliDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Med_CliDataSet1.xss">
+      <DependentUpon>Med_CliDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Clinica_Medica - DATA\Clinica_Medica - DATA.csproj">
+      <Project>{b03ed087-00cb-47ac-8c2b-3c849c1449ac}</Project>
+      <Name>Clinica_Medica - DATA</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
